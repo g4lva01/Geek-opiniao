@@ -1,0 +1,53 @@
+.container__content{
+  width: 100%;
+  height: 100vh;
+  
+  margin-top: 20px;
+  
+  display: flex;
+  flex-direction: column;
+  
+  align-items: center;
+}
+
+.content__apresentecion{
+  display: flex;
+  flex-direction: row;
+  margin-left: 15px;
+  background-color: black;
+}
+
+.content__cover > img{
+  border:2.5px solid rgb(144, 144, 144);
+  height: 300px;
+}
+  
+.content__sinopse{
+  margin-top: 15px;
+  margin-left: 5px;
+  background-color: black;
+}
+  
+.content__sinopse > p{
+  color: rgb(198, 197, 197);
+  background-color: black;
+  font-size: 30px;
+}
+
+.content__title{
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.content__opinion > a{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  color: red;
+}
+
+.content__opinion > p{
+  font-size: 30px;
+  margin-left: 5px;
+  margin-top: 5px;
+}

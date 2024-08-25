@@ -1,0 +1,25 @@
+*{
+    background-color: black;
+}
+
+.container__menu-bar {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.container__menu-bar > ul{
+    display: flex;
+    flex-direction: row;
+}
+  
+.container__menu-bar > ul > li{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    list-style: none;
+}
+
+.activated{
+    color: red;
+}

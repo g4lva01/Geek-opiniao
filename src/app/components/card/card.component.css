@@ -1,0 +1,27 @@
+*{
+    background-color: black;
+}
+
+.container__card {
+    width: calc(100%/6);
+    float: left;
+    margin: 0;
+    padding: 10px;
+    position: relative;
+}
+
+.card__photo > img {
+    height: 200px;
+    border-radius: 6px;
+}
+
+.card__title > h3 {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    width: 100%;
+    float: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
