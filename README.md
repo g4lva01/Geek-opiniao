@@ -1,27 +1,23 @@
-# AngularGeekOpiniao
+# 🤓 Geek Opinião - Blog Core
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.0.
+Um blog moderno construído em **Angular 19** dedicado a centralizar análises, resenhas e opiniões sobre o ecossistema Geek, com foco especial em Animes, Mangás, Manhwas e Light Novels.
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 🚀 Tecnologias Utilizadas
 
-## Code scaffolding
+* **Angular 19** (Arquitetura moderna com Standalone Components)
+* **Vite & esbuild** (Application Builder ultra-rápido para compilação)
+* **TypeScript** (Tipagem estática e segurança no código)
+* **HTML5 & CSS3** (Estruturação e estilização customizada)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+---
 
-## Build
+## 🛠️ Como Executar o Projeto Localmente
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Para clonar e rodar esta aplicação na sua máquina, você precisará do [Git](https://git-scm.com) e do [Node.js](https://nodejs.org/) instalados.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### 1. Clonar o repositório
+```bash
+git clone [https://github.com/seu-usuario/Geek-opiniao.git](https://github.com/seu-usuario/Geek-opiniao.git)
+cd Geek-opiniao
