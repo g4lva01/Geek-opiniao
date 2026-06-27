@@ -7,12 +7,7 @@ import { Component, Input } from '@angular/core';
     standalone: false
 })
 export class CardComponent {
-  @Input()
-  photoCover:string = ""
-
-  @Input()
-  cardTitle:string = ""
-
-  @Input()
-  Id:string = ""
+  @Input() photoCover:string = "";
+  @Input() cardTitle:string = "";
+  @Input() Id:string = "";
 }

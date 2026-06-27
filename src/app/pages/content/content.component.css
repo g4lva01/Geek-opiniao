@@ -1,53 +1,92 @@
-.container__content{
-  width: 100%;
-  height: 100vh;
-  
-  margin-top: 20px;
-  
-  display: flex;
-  flex-direction: column;
-  
-  align-items: center;
+:host {
+    display: block;
+    background-color: #0b0b0b;
+    min-height: 100vh;
+    color: #f5f5f5;
+    font-family: 'Segoe UI', system-ui, sans-serif;
 }
 
-.content__apresentecion{
-  display: flex;
-  flex-direction: row;
-  margin-left: 15px;
-  background-color: black;
+.container__content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px 20px;
 }
 
-.content__cover > img{
-  border:2.5px solid rgb(144, 144, 144);
-  height: 300px;
-}
-  
-.content__sinopse{
-  margin-top: 15px;
-  margin-left: 5px;
-  background-color: black;
-}
-  
-.content__sinopse > p{
-  color: rgb(198, 197, 197);
-  background-color: black;
-  font-size: 30px;
+.content__navigation {
+    margin-bottom: 25px;
 }
 
-.content__title{
-  margin-top: 20px;
-  margin-bottom: 15px;
+.content__navigation a {
+    color: #e50914;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    transition: color 0.2s ease;
 }
 
-.content__opinion > a{
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-  color: red;
+.content__navigation a:hover {
+    color: #fff;
 }
 
-.content__opinion > p{
-  font-size: 30px;
-  margin-left: 5px;
-  margin-top: 5px;
+.content__title h1 {
+    font-size: clamp(28px, 5vw, 42px);
+    font-weight: 800;
+    margin: 0 0 30px 0;
+    color: #fff;
+    border-left: 5px solid #e50914;
+    padding-left: 15px;
+}
+
+.content__presentation {
+    display: block;
+    margin-bottom: 40px;
+    background-color: #121212;
+    border-radius: 8px;
+    padding: 20px;
+    border: 1px solid #222;
+}
+
+.content__cover {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.content__cover > img {
+    height: 380px;
+    border-radius: 6px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+    border: 1px solid #333;
+}
+
+.content__synopsis h2, 
+.content__opinion h2 {
+    font-size: 20px;
+    color: #e50914;
+    margin-top: 0;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.content__synopsis > p {
+    color: #d1d1d1;
+    font-size: 16px;
+    line-height: 26px;
+    margin: 0;
+}
+
+.content__opinion {
+    background-color: #161616;
+    padding: 25px;
+    border-radius: 8px;
+    border-top: 3px solid #e50914;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.content__opinion > p {
+    color: #eeeeee;
+    font-size: 17px;
+    line-height: 28px;
+    margin: 0;
+    white-space: pre-line;
 }

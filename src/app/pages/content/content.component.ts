@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
+import { Location } from '@angular/common';
 import {data} from '../../data/data'
 
 @Component({
@@ -16,23 +17,32 @@ export class ContentComponent implements OnInit {
   private id:string | null = "0"
 
   constructor(
-    private route:ActivatedRoute
+    private route:ActivatedRoute,
+    private router: Router,
+    private location: Location
   ) { }
 
   ngOnInit(): void {
-    this.route.paramMap.subscribe( value =>
-     this.id = value.get("id")
-    )
-
-    this.setValuesToComponent(this.id)
+    this.route.paramMap.subscribe( value => {
+     this.id = value.get("id");
+     this.setValuesToComponent(this.id);
+    });
   }
 
   setValuesToComponent(id:string | null){
     const result = data.filter(article => article.id == id)[0]
 
-    this.contentTitle = result.title
-    this.contentOpinion = result.opinion
-    this.photoCover = result.photoCover
-    this.contentSinopse = result.sinopse
+    if (result) {
+      this.contentTitle = result.title
+      this.contentOpinion = result.opinion
+      this.photoCover = result.photoCover
+      this.contentSinopse = result.sinopse
+    } else {
+      this.router.navigate(['']);
+    }
+  }
+
+  goBack(): void {
+    this.location.back();
   }
 }

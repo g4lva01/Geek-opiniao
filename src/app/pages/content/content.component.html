@@ -1,21 +1,26 @@
 <div class="container__content">
-  <div class="content__title">
-    <h1>{{ contentTitle }}</h1>
+<div class="content__navigation">
+    <a href="javascript:void(0)" (click)="goBack()">🔹 Voltar para a página anterior</a>
   </div>
-  <div class="content__apresentecion">
-    <div class="content__cover">
-      <img src="{{ photoCover }}" alt="">
+
+  <article class="content__article">
+    <div class="content__title">
+      <h1>{{ contentTitle }}</h1>
     </div>
-    <div class="content__sinopse">
-      <p>
-        {{ contentSinopse }}
-      </p>
+
+    <div class="content__presentation">
+      <div class="content__cover">
+        <img [src]="photoCover" [alt]="contentTitle">
+      </div>
+      <div class="content__synopsis">
+        <h2>Sinopse</h2>
+        <p>{{ contentSinopse }}</p>
+      </div>
     </div>
-  </div>
-  <div class="content__opinion">
-    <a [routerLink]="['']"> << VOLTAR </a>
-    <p>
-      {{contentOpinion}}
-    </p>
-  </div>
+
+    <div class="content__opinion">
+      <h2>Nossa Opinião / Resenha</h2>
+      <p>{{ contentOpinion }}</p>
+    </div>
+  </article>
 </div>
