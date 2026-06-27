@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-menu-title',
-  templateUrl: './menu-title.component.html',
-  styleUrls: ['./menu-title.component.css']
+    selector: 'app-menu-title',
+    templateUrl: './menu-title.component.html',
+    styleUrls: ['./menu-title.component.css'],
+    standalone: false
 })
 export class MenuTitleComponent {
 
